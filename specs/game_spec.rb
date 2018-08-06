@@ -11,7 +11,8 @@ class TestGame < MiniTest::Test
 
   def test_rock_paper_scissors()
     assert_equal( "a draw... play again!", @game1.rock_paper_scissors() )
-    assert_equal( "paper wins!!", @game2.rock_paper_scissors() )
+    # assert_equal( "paper wins!!", @game2.rock_paper_scissors() )
+    assert_equal( "Paper covers rock... Player 1 wins by playing paper!!", @game2.rock_paper_scissors() )
   end
 
 end
